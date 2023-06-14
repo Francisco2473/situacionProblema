@@ -3,8 +3,8 @@ Autor: Francisco Tonatihu Castro Flores   A01749518
 Declaracion de clase padre Video
 */
 
-#ifndef ENVIO_H
-#define ENVIO_H
+#ifndef VIDEO_H
+#define VIDEO_H
 #include <string>
 using namespace std;
 
@@ -19,7 +19,7 @@ protected:
     string fechaEstreno;
 
     public: 
-    Video (const string id, const string nombre, const string genero, int calificacion, int duracion, int fechaEstreno);
+    Video (const string id, const string nombre, const string genero, int calificacion, int duracion, const string fechaEstreno);
     string getId()const;
     string getNombre()const;
     string getGenero()const;
