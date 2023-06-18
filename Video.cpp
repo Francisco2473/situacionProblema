@@ -1,12 +1,15 @@
 /*
 Autor: Francisco Tonatihu Castro Flores   A01749518
-Implementacion de la clase Video 
+Implementacion de la clase Video
 */
-#include "Video.h"
 
-Video::Video(const string id, const string nombre, const string genero, int calificacion, int duracion,  const string fechaEstreno): id(id), nombre(nombre), genero(genero), calificacion(calificacion), duracion(duracion), fechaEstreno(fechaEstreno ) 
-{
-}
+#include "Video.h"
+using namespace std;
+
+Video::Video(const string &id, const string &nombre, const string &genero,
+             int calificacion, int duracion, const string &fechaEstreno)
+    : id(id), nombre(nombre), genero(genero), calificacion(calificacion),
+      duracion(duracion), fechaEstreno(fechaEstreno) {}
 
 string Video::getId() const
 {
@@ -38,7 +41,11 @@ string Video::getFechaEstreno() const
     return fechaEstreno;
 }
 
-void Video::setCalificacion(int alificacion)
+void Video::setCalificacion(int calificacion)
 {
-    this-> calificacion=calificacion; 
+    this->calificacion = calificacion;
+}
+
+Video::~Video()
+{
 }

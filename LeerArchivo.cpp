@@ -1,8 +1,8 @@
 /*
-Autor: 
+Autor: Francisco Tonatihu Castro Flores   A01749518
 Leer el archivo de texto en C++
 */
-
+/*
 #include <iostream>
 #include <fstream>//para  ifstream
 #include <sstream> //para 
@@ -17,7 +17,7 @@ int main(int argc, char const* argv[])
     ifstream entrada;
     entrada.open("DatosPeliculas.csv");
 
-    string lines;
+   //string lines;
     string linea; 
     int numeroLinea= 1;
     while (getline (entrada, linea))
@@ -69,4 +69,4 @@ vector <string> separar(string linea)
     }
     //cout << "tokens: " << numeroTokens << endl << endl; 
     return tokens; 
-}
+}*/
